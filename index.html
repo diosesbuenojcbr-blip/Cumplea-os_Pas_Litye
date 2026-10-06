@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Feliz Cumpleaños Pastora Lityeroi</title>
+
+
+<style>
+
+/* =====================================
+   CONFIGURACIÓN GENERAL
+===================================== */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', serif;
+    background:#FFF9F5;
+    color:#594A4E;
+    overflow-x:hidden;
+}
+
+
+/* =====================================
+   PORTADA
+===================================== */
+
+.portada{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    position:relative;
+    overflow:hidden;
+
+    background:
+        radial-gradient(circle at 10% 20%, #F7B6C8 0 70px, transparent 71px),
+        radial-gradient(circle at 90% 15%, #C9B6E4 0 90px, transparent 91px),
+        radial-gradient(circle at 15% 85%, #A9D8F3 0 80px, transparent 81px),
+        radial-gradient(circle at 88% 82%, #F8DD8B 0 75px, transparent 76px),
+        radial-gradient(circle at 50% 5%, #B8E0D2 0 55px, transparent 56px),
+        linear-gradient(135deg, #FFF9F5, #FCEFE9);
+}
+
+
+/* Decoración grande */
+
+.portada::before{
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+    height:450px;
+
+    border-radius:50%;
+
+    background:#F6C5A5;
+
+    opacity:.20;
+
+    top:-220px;
+    right:-150px;
+}
+
+.portada::after{
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    border-radius:50%;
+
+    background:#B8E0D2;
+
+    opacity:.18;
+
+    bottom:-170px;
+    left:-130px;
+}
+
+
+/* =====================================
+   DECORACIONES
+===================================== */
+
+.decoracion{
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:1;
+}
+
+.decoracion span{
+    position:absolute;
+
+    font-size:35px;
+
+    animation:flotar 4s ease-in-out infinite;
+}
+
+.decoracion span:nth-child(1){
+    left:5%;
+    top:15%;
+}
+
+.decoracion span:nth-child(2){
+    right:7%;
+    top:20%;
+}
+
+.decoracion span:nth-child(3){
+    left:10%;
+    bottom:18%;
+}
+
+.decoracion span:nth-child(4){
+    right:10%;
+    bottom:15%;
+}
+
+.decoracion span:nth-child(5){
+    left:20%;
+    top:10%;
+}
+
+.decoracion span:nth-child(6){
+    right:20%;
+    top:12%;
+}
+
+.decoracion span:nth-child(7){
+    left:7%;
+    top:50%;
+}
+
+.decoracion span:nth-child(8){
+    right:6%;
+    top:55%;
+}
+
+@keyframes flotar{
+
+    0%,100%{
+        transform:translateY(0) rotate(-5deg);
+    }
+
+    50%{
+        transform:translateY(-15px) rotate(5deg);
+    }
+
+}
+
+
+/* =====================================
+   CONTENEDOR
+===================================== */
+
+.contenedor{
+    position:relative;
+
+    z-index:2;
+
+    max-width:850px;
+
+    width:100%;
+
+    padding:55px 35px;
+
+    background:rgba(255,255,255,.90);
+
+    border-radius:35px;
+
+    border:4px solid transparent;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.94),
+            rgba(255,255,255,.94)
+        ),
+        linear-gradient(
+            135deg,
+            #F7B6C8,
+            #C9B6E4,
+            #A9D8F3,
+            #F8DD8B,
+            #B8E0D2
+        );
+
+    background-origin:border-box;
+
+    background-clip:
+        padding-box,
+        border-box;
+
+    box-shadow:
+        0 20px 50px rgba(120,80,100,.18);
+}
+
+
+/* =====================================
+   FLOR
+===================================== */
+
+.flor{
+    font-size:45px;
+
+    margin-bottom:15px;
+
+    animation:flor 3s ease-in-out infinite;
+}
+
+@keyframes flor{
+
+    0%,100%{
+        transform:rotate(-5deg) scale(1);
+    }
+
+    50%{
+        transform:rotate(5deg) scale(1.08);
+    }
+
+}
+
+
+/* =====================================
+   TEXTO PEQUEÑO
+===================================== */
+
+.pequeno{
+    font-size:13px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#A27B8A;
+
+    margin-bottom:15px;
+}
+
+
+/* =====================================
+   TÍTULO
+===================================== */
+
+h1{
+    font-size:52px;
+
+    line-height:1.1;
+
+    margin-bottom:10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #C65F82,
+            #8C6BB1,
+            #5B91B8,
+            #C89D3C
+        );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    animation:titulo 3s ease-in-out infinite;
+}
+
+@keyframes titulo{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.02);
+    }
+
+}
+
+
+/* =====================================
+   NOMBRE
+===================================== */
+
+h2{
+    font-size:32px;
+
+    color:#6E5260;
+
+    margin-bottom:25px;
+}
+
+
+/* =====================================
+   LÍNEA
+===================================== */
+
+.linea{
+    width:120px;
+
+    height:5px;
+
+    border-radius:10px;
+
+    margin:0 auto 25px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            #F7B6C8,
+            #C9B6E4,
+            #A9D8F3,
+            #F8DD8B
+        );
+}
+
+
+/* =====================================
+   TEXTO
+===================================== */
+
+.texto{
+    font-size:19px;
+
+    line-height:1.8;
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#66565B;
+}
+
+
+/* =====================================
+   BOTÓN
+===================================== */
+
+.boton{
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 32px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #D87D9A,
+            #9D7BB8,
+            #6EA5C6
+        );
+
+    box-shadow:
+        0 8px 20px rgba(130,90,120,.25);
+
+    transition:.3s;
+}
+
+.boton:hover{
+    transform:translateY(-4px) scale(1.03);
+
+    box-shadow:
+        0 12px 25px rgba(130,90,120,.35);
+}
+
+
+/* =====================================
+   SECCIONES
+===================================== */
+
+.seccion{
+    padding:80px 25px;
+
+    text-align:center;
+
+    background:#FFF9F5;
+}
+
+.seccion h2{
+    font-size:34px;
+
+    color:#7C6170;
+
+    margin-bottom:20px;
+}
+
+
+/* =====================================
+   TARJETAS
+===================================== */
+
+.mensajes{
+    max-width:1100px;
+
+    margin:40px auto 0;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+}
+
+.tarjeta{
+    background:white;
+
+    padding:30px 25px;
+
+    border-radius:25px;
+
+    box-shadow:
+        0 10px 30px rgba(100,70,80,.10);
+
+    border-top:6px solid #F7B6C8;
+
+    transition:.3s;
+}
+
+.tarjeta:nth-child(2){
+    border-top-color:#C9B6E4;
+}
+
+.tarjeta:nth-child(3){
+    border-top-color:#A9D8F3;
+}
+
+.tarjeta:nth-child(4){
+    border-top-color:#F8DD8B;
+}
+
+.tarjeta:nth-child(5){
+    border-top-color:#B8E0D2;
+}
+
+.tarjeta:hover{
+    transform:translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(100,70,80,.16);
+}
+
+.foto{
+    width:100px;
+    height:100px;
+
+    border-radius:50%;
+
+    margin:0 auto 15px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #F7B6C8,
+            #C9B6E4,
+            #A9D8F3
+        );
+
+    font-size:35px;
+
+    color:white;
+}
+
+.foto img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.nombre{
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#735867;
+
+    margin-bottom:12px;
+}
+
+.mensaje{
+    line-height:1.7;
+
+    color:#6D6064;
+}
+
+
+/* =====================================
+   💌 MENSAJES DESLIZABLES
+===================================== */
+
+.mensajes-container{
+    max-width:650px;
+    margin:40px auto;
+    text-align:center;
+    padding:20px;
+}
+
+.mensaje-slide{
+    display:none;
+    animation:aparecerMensaje 0.5s ease;
+}
+
+.mensaje-slide.activo{
+    display:block;
+}
+
+.foto-grande{
+    width:340px;
+    height:280px;
+    margin:0 auto 20px;
+    border-radius:20px;
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #F7B6C8,
+            #C9B6E4,
+            #A9D8F3
+        );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:60px;
+}
+
+.foto-grande img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.mensaje-slide .nombre{
+    font-size:26px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.mensaje-slide .mensaje{
+    font-size:18px;
+    line-height:1.9;
+
+    max-width:650px;
+    margin:0 auto 30px;
+
+    padding:30px 35px;
+
+    background:#FFFFFF;
+
+    border:2px solid #E8C6D5;
+    border-radius:22px;
+
+    color:#66565B;
+
+    text-align:left;
+
+    white-space:pre-line;
+
+    box-shadow:
+        0 8px 25px rgba(120,80,100,0.10);
+
+    position:relative;
+}
+
+.botones-mensajes{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:25px;
+}
+
+.botones-mensajes button{
+    border:none;
+    padding:12px 22px;
+    border-radius:25px;
+    background:#C9B6E4;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.botones-mensajes button:hover{
+    transform:scale(1.05);
+}
+
+@keyframes aparecerMensaje{
+
+    from{
+        opacity:0;
+        transform:translateX(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+
+/* =====================================
+   📱 AJUSTE PARA CELULAR
+===================================== */
+
+@media(max-width:600px){
+
+    .foto-grande{
+    width:100%;
+    max-width:320px;
+    height:280px;
+
+    }
+
+    .mensaje-slide .nombre{
+        font-size:23px;
+    }
+
+   
+    .mensaje-slide .mensaje{
+        font-size:16px;
+        line-height:1.8;
+        padding:22px 18px;
+    }
+
+    .botones-mensajes button{
+        padding:10px 16px;
+        font-size:14px;
+    }
+
+}
+
+/* =====================================
+   VERSÍCULO
+===================================== */
+
+.versiculo{
+    padding:70px 25px;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #F7B6C8,
+            #C9B6E4
+        );
+
+    color:white;
+}
+
+.versiculo p{
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:23px;
+
+    line-height:1.7;
+
+    font-style:italic;
+}
+
+.referencia{
+    margin-top:20px;
+
+    font-size:17px;
+
+    font-weight:bold;
+  }
+
+ }
+
+/* =====================================
+   FINAL
+===================================== */
+
+.final{
+    padding:90px 25px;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFF9F5,
+            #FCEFE9,
+            #EEF8F5
+        );
+}
+
+.final h2{
+    font-size:40px;
+
+    color:#765A68;
+
+    margin-bottom:20px;
+}
+
+.final p{
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:19px;
+
+    line-height:1.8;
+}
+
+
+/* =====================================
+   PIE DE PÁGINA
+===================================== */
+
+footer{
+    padding:25px;
+
+    text-align:center;
+
+    background:#6F5965;
+
+    color:white;
+
+    font-size:14px;
+}
+
+
+/* =====================================
+   GLOBOS DEL EFECTO
+===================================== */
+
+.globo{
+    position:fixed;
+
+    font-size:35px;
+
+    z-index:9999;
+
+    pointer-events:none;
+
+    animation:subir 3s ease-out forwards;
+}
+
+@keyframes subir{
+
+    0%{
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity:1;
+    }
+
+    100%{
+        transform:
+            translateY(-100vh)
+            rotate(25deg);
+
+        opacity:0;
+    }
+
+}
+
+/* =====================================
+   CONFETI
+===================================== */
+
+.confeti{
+    position:fixed;
+
+    top:-20px;
+
+    z-index:9999;
+
+    font-size:25px;
+
+    pointer-events:none;
+
+    animation:caer 4s linear forwards;
+}
+
+@keyframes caer{
+
+    0%{
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity:1;
+    }
+
+    100%{
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity:0;
+    }
+
+}
+
+
+/* =====================================
+   CELULAR
+===================================== */
+
+@media(max-width:600px){
+
+    .contenedor{
+        padding:40px 22px;
+
+        border-radius:25px;
+    }
+
+    h1{
+        font-size:38px;
+    }
+
+    h2{
+        font-size:26px;
+    }
+
+    .texto{
+        font-size:17px;
+    }
+
+    .decoracion span{
+        font-size:25px;
+    }
+
+    .seccion{
+        padding:60px 18px;
+    }
+
+    .seccion h2{
+        font-size:28px;
+    }
+
+    .versiculo p{
+        font-size:19px;
+    }
+
+    .final h2{
+        font-size:31px;
+    }
+
+}
+
+.controles-musica{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    display:flex;
+    gap:8px;
+    z-index:10000;
+}
+
+.controles-musica button{
+    border:none;
+    padding:10px 15px;
+    border-radius:25px;
+    background:rgba(111,89,101,.90);
+    color:white;
+    font-size:13px;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =================================================
+     🎵 MÚSICA DE FONDO
+     
+     IMPORTANTE:
+     Coloca tu canción en la misma carpeta del HTML
+     y llámala:
+
+     melodia.mp3
+
+================================================== -->
+
+<audio id="musica" loop>
+
+    <source
+        src="melodia.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+<div class="controles-musica">
+
+    <button onclick="pausarMusica()" id="botonMusica">
+        ⏸️ Pausar música
+    </button>
+
+    <button onclick="reiniciarMusica()">
+        🔄 Reiniciar
+    </button>
+
+</div>
+
+
+
+<!-- =====================================
+     PORTADA
+===================================== -->
+
+<section class="portada">
+
+
+    <!-- DECORACIONES -->
+
+    <div class="decoracion">
+
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+
+        <span>✨</span>
+        <span>🎉</span>
+        <span>🌸</span>
+        <span>⭐</span>
+
+    </div>
+
+
+    <!-- CONTENIDO -->
+
+    <div class="contenedor">
+
+        <div class="flor">
+            🌸
+        </div>
+
+        <div class="pequeno">
+            Con mucho cariño
+        </div>
+
+        <h1>
+            ¡Feliz cumpleaños!
+        </h1>
+
+        <h2>
+            Pastora Litye
+        </h2>
+
+        <div class="linea"></div>
+
+        <p class="texto">
+
+            Hoy celebramos con mucha alegría
+            la vida de una mujer que ha decidido
+            servir a Dios y bendecir a muchas personas.
+
+            Que este nuevo año de vida esté lleno
+            de la presencia de Dios, nuevas fuerzas,
+            alegría y muchas bendiciones.
+
+        </p>
+
+
+        <button
+            class="boton"
+            onclick="celebrar()">
+
+            🎉 Abrir sorpresa 🎉
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     BIENVENIDA
+===================================== -->
+
+<section
+    class="seccion"
+    id="bienvenida">
+
+    <h2>
+        Un mensaje de toda la iglesia 💐
+    </h2>
+
+    <p class="texto">
+
+        Querida pastora, hoy queremos recordarle
+        cuánto apreciamos tu vida y todo lo que
+        Dios ha hecho a través de ti.
+
+        Gracias por cada enseñanza, cada oración,
+        cada palabra de ánimo y por permitir que
+        Dios la use para bendecir nuestras vidas.
+
+    </p>
+
+
+
+    <!-- =====================================
+         MENSAJES
+    ====================================== -->
+
+<!-- MENSAJES -->
+
+<div class="mensajes-container">
+
+    <!-- PERSONA 1 -->
+
+    <div class="mensaje-slide activo">
+
+        <div class="foto-grande">
+            <img src="Mensaje_pas_1.jpeg" alt="Mensaje para la Pastora">
+        </div>
+
+        <div class="nombre">
+            CAMI
+        </div>
+
+<p class="mensaje">Pastora Litye 💗
+
+Hoy quiero darle gracias a Dios de una manera muy especial por tu vida.
+
+Me alegra muchísimo haberte conocido y poder decir que, además de ser mi pastora y mi líder, eres una persona que quiero y aprecio de verdad.
+
+Gracias por cada consejo, por tu forma de estar para los demás, por tu cariño y también por esas pequeñas cosas que quizá no siempre te digo, pero que valoro muchísimo.
+
+Deseo que este nuevo año de vida venga lleno de la presencia de Dios, de alegrías, sueños cumplidos y muchas razones para sonreír.
+
+¡Feliz cumpleaños, pastora! Te quiero muchísimo y espero que hoy te sientas tan especial como lo eres para quienes tenemos la bendición de conocerte. 🎂✨
+
+        </p>
+
+    </div>
+
+
+    <!-- PERSONA 2 -->
+    <div class="mensaje-slide">
+
+        <div class="foto-grande">
+            📸
+        </div>
+
+        <div class="nombre">
+            Nombre
+        </div>
+
+        <p class="mensaje">
+            Aquí irá el mensaje de cumpleaños
+            de esta persona.
+        </p>
+
+    </div>
+
+
+    <!-- PERSONA 3 -->
+    <div class="mensaje-slide">
+
+        <div class="foto-grande">
+            📸
+        </div>
+
+        <div class="nombre">
+            Nombre
+        </div>
+
+        <p class="mensaje">
+            Aquí irá el mensaje de cumpleaños
+            de esta persona.
+        </p>
+
+    </div>
+
+
+    <!-- PERSONA 4 -->
+    <div class="mensaje-slide">
+
+        <div class="foto-grande">
+            📸
+        </div>
+
+        <div class="nombre">
+            Nombre
+        </div>
+
+        <p class="mensaje">
+            Aquí irá el mensaje de cumpleaños
+            de esta persona.
+        </p>
+
+    </div>
+
+
+    <!-- PERSONA 5 -->
+    <div class="mensaje-slide">
+
+        <div class="foto-grande">
+            📸
+        </div>
+
+        <div class="nombre">
+            Nombre
+        </div>
+
+        <p class="mensaje">
+            Aquí irá el mensaje de cumpleaños
+            de esta persona.
+        </p>
+
+    </div>
+
+
+    <!-- BOTONES -->
+    <div class="botones-mensajes">
+
+        <button onclick="mensajeAnterior()">
+            ⬅️ Anterior
+        </button>
+
+        <button onclick="mensajeSiguiente()">
+            Siguiente ➡️
+        </button>
+
+    </div>
+
+</div>
+
+<!-- =====================================
+     VERSÍCULO
+===================================== -->
+
+<section class="versiculo">
+
+    <p>
+
+        “Que Dios te bendiga y siempre te cuide;
+        que Dios te mire con agrado y te muestre su bondad;
+        que Dios te mire con agrado y te llene de paz.”
+
+    </p>
+
+    <div class="referencia">
+
+        Números 6:24-26
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     MENSAJE FINAL
+===================================== -->
+
+<section class="final">
+
+    <h2>
+        Gracias a Dios por tu vida 🌷
+    </h2>
+
+    <p>
+
+        Que Dios continúe guiando cada paso
+        de su vida y fortaleciendo su llamado.
+
+        Que nunca falten motivos para sonreír,
+        sueños por cumplir y personas que
+        agradezcan a Dios por tenerla en sus vidas.
+
+        <br><br>
+
+        <strong>
+            ¡Feliz cumpleaños, Pastora Litye! 🎂🎉
+        </strong>
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================
+     PIE DE PÁGINA
+===================================== -->
+
+<footer>
+
+    Con cariño, su iglesia ❤️
+
+</footer>
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script>
+
+function celebrar(){
+
+    /* =================================
+       🎵 INICIAR MÚSICA
+    ================================= */
+
+    const musica = document.getElementById("musica");
+
+    if(musica){
+        musica.play().catch(function(error){
+            console.log("La música necesita interacción del usuario.");
+        });
+    }
+
+
+    /* =================================
+       🎈🎉 CELEBRACIÓN INTERCALADA
+    ================================= */
+
+    const elementos = [
+        "🎈","✨","🎉","🎈","🌸","✨",
+        "🎈","⭐","🎊","🎈","✨","🌸",
+        "🎉","🎈","⭐","✨","🎈","🎊",
+        "🌸","🎈","✨","🎉","⭐","🎈",
+        "🎊","✨","🎈","🌸","🎉","⭐",
+        "🎈","✨","🎊","🎈","🌸","⭐"
+    ];
+
+    elementos.forEach(function(elemento, i){
+
+        setTimeout(function(){
+
+            const decoracion = document.createElement("div");
+
+            decoracion.innerHTML = elemento;
+
+            decoracion.style.position = "fixed";
+
+            /* Posición horizontal aleatoria */
+            decoracion.style.left =
+                (5 + Math.random() * 90) + "%";
+
+            /* Algunas cosas salen desde abajo,
+               otras desde arriba */
+            if(i % 3 === 0){
+
+                decoracion.style.bottom = "-60px";
+
+            }else{
+
+                decoracion.style.top = "-50px";
+
+            }
+
+            /* Tamaños diferentes */
+            decoracion.style.fontSize =
+                (20 + Math.random() * 30) + "px";
+
+            decoracion.style.zIndex = "9999";
+
+            decoracion.style.pointerEvents = "none";
+
+            /* Rotación inicial diferente */
+            decoracion.style.transform =
+                "rotate(" +
+                (Math.random() * 40 - 20) +
+                "deg)";
+
+            /* =============================
+               🎈 GLOBOS
+            ============================= */
+
+            if(elemento === "🎈"){
+
+                decoracion.className = "globo";
+
+                decoracion.style.animation =
+                    "subir " +
+                    (3 + Math.random() * 2) +
+                    "s ease-out forwards";
+
+            }
+
+            /* =============================
+               🎉 CONFETI
+            ============================= */
+
+            else{
+
+                decoracion.className = "confeti";
+
+                decoracion.style.animation =
+                    "caer " +
+                    (3 + Math.random() * 3) +
+                    "s linear forwards";
+
+            }
+
+            document.body.appendChild(decoracion);
+
+
+            /* Eliminar después de la animación */
+
+            setTimeout(function(){
+
+                decoracion.remove();
+
+            },6500);
+
+        }, i * 120);
+
+    });
+
+
+    /* =================================
+       📜 BAJAR A LOS MENSAJES
+    ================================= */
+
+    const bienvenida =
+        document.getElementById("bienvenida");
+
+    if(bienvenida){
+
+        setTimeout(function(){
+
+            bienvenida.scrollIntoView({
+                behavior:"smooth"
+            });
+
+        },800);
+
+    }
+
+}
+
+/* =====================================
+   💌 MENSAJES DESLIZABLES
+===================================== */
+
+let mensajeActual = 0;
+
+const mensajes = document.querySelectorAll(".mensaje-slide");
+
+
+function mostrarMensaje(numero){
+
+    mensajes.forEach(function(mensaje){
+
+        mensaje.classList.remove("activo");
+
+    });
+
+    mensajes[numero].classList.add("activo");
+
+}
+
+
+/* =====================================
+   ➡️ SIGUIENTE MENSAJE
+===================================== */
+
+function mensajeSiguiente(){
+
+    mensajeActual++;
+
+    if(mensajeActual >= mensajes.length){
+
+        mensajeActual = 0;
+
+    }
+
+    mostrarMensaje(mensajeActual);
+
+}
+
+
+/* =====================================
+   ⬅️ MENSAJE ANTERIOR
+===================================== */
+
+function mensajeAnterior(){
+
+    mensajeActual--;
+
+    if(mensajeActual < 0){
+
+        mensajeActual = mensajes.length - 1;
+
+    }
+
+    mostrarMensaje(mensajeActual);
+}
+
+function pausarMusica(){
+
+    const musica = document.getElementById("musica");
+    const boton = document.getElementById("botonMusica");
+
+    if(musica.paused){
+
+        musica.play();
+        boton.innerHTML = "⏸️ Pausar música";
+
+    }else{
+
+        musica.pause();
+        boton.innerHTML = "▶️ Reanudar música";
+
+    }
+
+}
+
+
+function reiniciarMusica(){
+
+    const musica = document.getElementById("musica");
+
+    musica.currentTime = 0;
+    musica.play();
+
+    document.getElementById("botonMusica").innerHTML =
+        "⏸️ Pausar música";
+
+}
+
+
+</script>
