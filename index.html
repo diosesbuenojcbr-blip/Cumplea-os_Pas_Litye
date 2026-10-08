@@ -96,6 +96,7 @@ body{
 }
 
 
+
 /* =====================================
    DECORACIONES
 ===================================== */
@@ -214,6 +215,71 @@ body{
 
     box-shadow:
         0 20px 50px rgba(120,80,100,.18);
+}
+
+/* =====================================
+   FOTO DE LA PASTORA - EFECTO SUAVE
+===================================== */
+
+.contenedor{
+    position:relative;
+    z-index:2;
+}
+
+/* La fotografía queda detrás del contenido */
+
+.contenedor::before{
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+    height:420px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    background-image:url("Pas_Litye.jpeg");
+
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    opacity:.20;
+
+    /* Mezcla el fondo blanco de la foto */
+    mix-blend-mode:multiply;
+
+    /* Desvanecimiento de los bordes */
+    -webkit-mask-image:radial-gradient(
+        ellipse at center,
+        black 20%,
+        rgba(0,0,0,.75) 45%,
+        rgba(0,0,0,.35) 65%,
+        transparent 82%
+    );
+
+    mask-image:radial-gradient(
+        ellipse at center,
+        black 20%,
+        rgba(0,0,0,.75) 45%,
+        rgba(0,0,0,.35) 65%,
+        transparent 82%
+    );
+
+    z-index:0;
+
+    pointer-events:none;
+}
+
+
+/* El texto queda por encima de la fotografía */
+
+.contenedor > *{
+    position:relative;
+    z-index:1;
 }
 
 
@@ -1086,20 +1152,19 @@ Deseo que este nuevo año de vida venga lleno de la presencia de Dios, de alegr�
     </div>
 
 
-    <!-- PERSONA 2 -->
+      <!-- PERSONA 2 -->
     <div class="mensaje-slide">
 
         <div class="foto-grande">
-            📸
+             <img src="Mensaje_pas_2.jpeg" alt="Mensaje para la Pastora">
         </div>
 
         <div class="nombre">
-            Nombre
+            FAMILIA JIMENEZ
         </div>
 
         <p class="mensaje">
-            Aquí irá el mensaje de cumpleaños
-            de esta persona.
+           Pas!!! Feliz cumpleaños que este día esté lleno de bendiciones, que tu presencia esté con nosotros por muchos cumpleaños más..                         te amamos..
         </p>
 
     </div>
@@ -1109,16 +1174,16 @@ Deseo que este nuevo año de vida venga lleno de la presencia de Dios, de alegr�
     <div class="mensaje-slide">
 
         <div class="foto-grande">
-            📸
+             <img src="Mensaje_pas_5.jpeg" alt="Mensaje para la Pastora">
         </div>
 
         <div class="nombre">
-            Nombre
+            ESPOSO
         </div>
 
         <p class="mensaje">
-            Aquí irá el mensaje de cumpleaños
-            de esta persona.
+            Feliz cumpleaños, mi amor ❤️. Hoy celebramos que naciste… aunque claramente el que salió ganando fui yo 😂. Gracias por existir en nuestras vida, Te Bendigo & Te Amo. ❤️
+            
         </p>
 
     </div>
@@ -1128,16 +1193,15 @@ Deseo que este nuevo año de vida venga lleno de la presencia de Dios, de alegr�
     <div class="mensaje-slide">
 
         <div class="foto-grande">
-            📸
+            <img src="Mensaje_pas_3.jpeg" alt="Mensaje para la Pastora">
         </div>
 
         <div class="nombre">
-            Nombre
+            FAMILIA BELTRAN 
         </div>
 
         <p class="mensaje">
-            Aquí irá el mensaje de cumpleaños
-            de esta persona.
+            “Pastora Litye, feliz cumpleaños. ❤️ Que el Señor siga guiando tu vida, fortaleciendo tu corazón y cumpliendo Sus propósitos en ti. Que este nuevo año esté lleno de Su presencia, gracia y muchas bendiciones. ¡Dios te bendiga siempre! 🎂🌷”
         </p>
 
     </div>
@@ -1147,16 +1211,55 @@ Deseo que este nuevo año de vida venga lleno de la presencia de Dios, de alegr�
     <div class="mensaje-slide">
 
         <div class="foto-grande">
-            📸
+            <img src="Mensaje_pas_4.jpeg" alt="Mensaje para la Pastora">
         </div>
 
         <div class="nombre">
-            Nombre
+            GLADYS
         </div>
 
         <p class="mensaje">
-            Aquí irá el mensaje de cumpleaños
-            de esta persona.
+            "Pastora, feliz cumpleaños que Dios siga guindola y bendiciendola grandemente, gracias por su servicio a Dios y por ser tan dediacada a su servicio. 
+EL Señor la recompense por todo su esfuerzo y dedicacion !BENDICIONES¡
+        </p>
+
+    </div>
+
+<!-- PERSONA 6 -->
+    <div class="mensaje-slide">
+
+        <div class="foto-grande">
+            <img src="Mensaje_pas_6.jpeg" alt="Mensaje para la Pastora">
+        </div>
+
+        <div class="nombre">
+            Yenny
+        </div>
+
+        <p class="mensaje">
+            Hola Litye!
+
+Damos gracias a Dios por permitirle un año más de vida junto a esta congregación, damos gracias por una mujer ejemplo de amor y pasión por el ministerio
+Felicitaciones por su cumpleaños y que el Señor cumpla los buenos deseos de su corazón conforme a su voluntad
+
+Un Abrazo 
+        </p>
+
+    </div>
+
+<!-- PERSONA 7 -->
+    <div class="mensaje-slide">
+
+        <div class="foto-grande">
+            <img src="Mensaje_pas_7.jpeg" alt="Mensaje para la Pastora">
+        </div>
+
+        <div class="nombre">
+            Familia Trejos
+        </div>
+
+        <p class="mensaje">
+            Feliz cumpleaños que Dios te bendiga siempre y puedas cumplir todos los sueños y anhelos de tu corazón, te queremos mucho
         </p>
 
     </div>
